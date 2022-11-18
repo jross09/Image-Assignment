@@ -23,10 +23,10 @@ void setup () {
   topHalfY = appHeight * 2/20;
   topHalfWidth = appWidth * 8/10;
   topHalfHeight = appHeight * 3/20;
-  bottomHalfX = appWidth * 6/8;
-  bottomHalfY = appHeight * 8/20;
+  bottomHalfX = topHalfX;
+  bottomHalfY = appHeight * 13/20;
   bottomHalfWidth = appWidth * 7/10;
-  bottomHalfHeight = appHeight * 13/20;
+  bottomHalfHeight = appHeight * 3/20;
   //
   //Dimensions for aspect ratio
   int picWidth1 = 729; //pixie landscape
