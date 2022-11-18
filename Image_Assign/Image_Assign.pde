@@ -19,14 +19,14 @@ void setup () {
   backgroundImageY = appHeight*0;
   backgroundImageWidth = appWidth-1;
   backgroundImageHeight = appHeight-1;
-  topHalfX = appWidth * 1/4;
-  topHalfY = appHeight * 1/20;
-  topHalfWidth = appWidth * 1/2;
-  topHalfHeight = appHeight * 13/20;
-  bottomHalfX = appWidth *1/2;
-  bottomHalfY = appHeight * 3/4;
-  bottomHalfWidth = appWidth * 1/4;
-  bottomHalfHeight = appHeight * 4/20;
+  topHalfX = appWidth * 1/8;
+  topHalfY = appHeight * 2/20;
+  topHalfWidth = appWidth * 8/10;
+  topHalfHeight = appHeight * 3/20;
+  bottomHalfX = appWidth * 6/8;
+  bottomHalfY = appHeight * 8/20;
+  bottomHalfWidth = appWidth * 7/10;
+  bottomHalfHeight = appHeight * 13/20;
   //
   //Dimensions for aspect ratio
   int picWidth1 = 729; //pixie landscape
@@ -58,7 +58,8 @@ void setup () {
     //
     //Rectangular Layout and Image Drawing to CANVAS
   rect( backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight );
-  //
+  rect( topHalfX, topHalfY, topHalfWidth, topHalfHeight ); //Top Half
+  rect( bottomHalfX, bottomHalfY, bottomHalfWidth, bottomHalfHeight ); //Bottom half
 }
 //
 void draw() {}
